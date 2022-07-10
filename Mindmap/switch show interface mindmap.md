@@ -3,21 +3,21 @@
 ### Management
 #### Input
 ##### Average
-###### Bits: 32
+###### Bits: 24
 ###### Packets: 0
 ##### Broadcast: 0
-##### Bytes: 566223
-##### Multicast: 2689
-##### Packets: 2689
+##### Bytes: 621741
+##### Multicast: 2953
+##### Packets: 2953
 ##### Unicast: 0
 #### Output
 ##### Average
 ###### Bits: 24
 ###### Packets: 0
 #### Broadcast: 0
-#### Bytes: 531626
-#### Multicast: 2342
-#### Packets: 2342
+#### Bytes: 584517
+#### Multicast: 2575
+#### Packets: 2575
 #### Unicast: 0
 ## Interface: Ethernet1/1
 ### Administrative State: up
@@ -50,32 +50,32 @@
 #### Input
 ##### Flow Control: off
 ##### IF Down Drops: 0
-##### Broadcast: 79
-##### Bytes: 8745060
+##### Broadcast: 87
+##### Bytes: 9546445
 ##### Discards: 0
 ##### Errors: 0
 ##### Multicast: 0
 ##### Pause: 0
-##### Packets: 8107
+##### Packets: 8746
 ##### Rates
-###### 1 Bits: 10192
-###### 1 Packets: 2
-###### 1 Summary Bits: 10.19 Kbps
-###### 1 Summary Packets: 2 pps
-###### 2 Bits: 4728
+###### 1 Bits: 16
+###### 1 Packets: 0
+###### 1 Summary Bits: 16 bps
+###### 1 Summary Packets: 0 pps
+###### 2 Bits: 0
 ###### 2 Packets: 0
-###### 2 Summary Bits: 4.73 Kbps
+###### 2 Summary Bits: 0 bps
 ###### 2 Summary Packets: 0 pps
-##### Unicast: 8028
+##### Unicast: 8659
 #### IP
 ##### Address: 192.168.255.138
 ##### Mask: 24
 ##### Prefix: 192.168.255.0
 #### Jumbo
-##### Input Packets: 1775
+##### Input Packets: 1945
 ##### Output Packets: 0
 #### Late Collisions: 0
-#### Link Flapped: 1d14h
+#### Link Flapped: 1d18h
 #### Load Interval
 ##### 1 
 ###### RX: 30
@@ -94,22 +94,22 @@
 #### Output
 ##### Flow Control:  off
 ##### Broadcast: 4
-##### Bytes: 1468911
+##### Bytes: 1583387
 ##### Discards: 0
 ##### Errors: 0
-##### Multicast: 2336
+##### Multicast: 2569
 ##### Pause: 0
-##### Packets: 9712
+##### Packets: 10529
 ##### Rate
-###### 1 Bits: 832
-###### 1 Packets: 2
-###### 1 Summary Bits: 832 bps
-###### 1 Summary Packets: 2 pps
-###### 2 Bits: 288
+###### 1 Bits: 16
+###### 1 Packets: 0
+###### 1 Summary Bits: 16 bps
+###### 1 Summary Packets: 0 pps
+###### 2 Bits: 32
 ###### 2 Packets: 0
-###### 2 Summary Bits:  288 bps
+###### 2 Summary Bits:  32 bps
 ###### 2 Summary Packets: 0 pps
-##### Unicast: 7372
+##### Unicast: 7956
 #### Overruns: 0
 #### Reliability: 255
 #### Reset Counters: 1
