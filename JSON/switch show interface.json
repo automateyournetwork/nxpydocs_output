@@ -25,16 +25,16 @@
                 "vdc_lvl_in_avg_bits": "24", 
                 "vdc_lvl_in_avg_pkts": "0", 
                 "vdc_lvl_in_bcast": "0", 
-                "vdc_lvl_in_bytes": "631202", 
-                "vdc_lvl_in_mcast": "2998", 
-                "vdc_lvl_in_pkts": "2998", 
+                "vdc_lvl_in_bytes": "5481", 
+                "vdc_lvl_in_mcast": "26", 
+                "vdc_lvl_in_pkts": "26", 
                 "vdc_lvl_in_ucast": "0", 
                 "vdc_lvl_out_avg_bits": "24", 
                 "vdc_lvl_out_avg_pkts": "0", 
                 "vdc_lvl_out_bcast": "0", 
-                "vdc_lvl_out_bytes": "593143", 
-                "vdc_lvl_out_mcast": "2613", 
-                "vdc_lvl_out_pkts": "2613", 
+                "vdc_lvl_out_bytes": "4759", 
+                "vdc_lvl_out_mcast": "21", 
+                "vdc_lvl_out_pkts": "21", 
                 "vdc_lvl_out_ucast": "0"
             }, 
             {
@@ -66,29 +66,29 @@
                 "eth_ignored": "0", 
                 "eth_in_flowctrl": "off", 
                 "eth_in_ifdown_drops": "0", 
-                "eth_inbcast": "88", 
-                "eth_inbytes": "10170014", 
+                "eth_inbcast": "2", 
+                "eth_inbytes": "219317", 
                 "eth_indiscard": "0", 
                 "eth_inerr": "0", 
                 "eth_inmcast": "0", 
                 "eth_inpause": "0", 
-                "eth_inpkts": "9199", 
-                "eth_inrate1_bits": "58736", 
+                "eth_inpkts": "142", 
+                "eth_inrate1_bits": "26288", 
                 "eth_inrate1_pkts": "2", 
-                "eth_inrate1_summary_bits": "58.74 Kbps", 
+                "eth_inrate1_summary_bits": "26.29 Kbps", 
                 "eth_inrate1_summary_pkts": "2 pps", 
-                "eth_inrate2_bits": "7592", 
+                "eth_inrate2_bits": "4400", 
                 "eth_inrate2_pkts": "0", 
-                "eth_inrate2_summary_bits": "7.59 Kbps", 
+                "eth_inrate2_summary_bits": "4.40 Kbps", 
                 "eth_inrate2_summary_pkts": "0 pps", 
-                "eth_inucast": "9111", 
+                "eth_inucast": "140", 
                 "eth_ip_addr": "192.168.255.138", 
                 "eth_ip_mask": "24", 
                 "eth_ip_prefix": "192.168.255.0", 
-                "eth_jumbo_inpkts": "2069", 
+                "eth_jumbo_inpkts": "30", 
                 "eth_jumbo_outpkts": "0", 
                 "eth_latecoll": "0", 
-                "eth_link_flapped": "1d19h", 
+                "eth_link_flapped": "00:17:33", 
                 "eth_load_interval1_rx": "30", 
                 "eth_load_interval1_tx": "30", 
                 "eth_load_interval2_rx": "300", 
@@ -101,21 +101,21 @@
                 "eth_oper_fec_state": "off", 
                 "eth_out_flowctrl": "off", 
                 "eth_outbcast": "4", 
-                "eth_outbytes": "1634127", 
+                "eth_outbytes": "15198", 
                 "eth_outdiscard": "0", 
                 "eth_outerr": "0", 
-                "eth_outmcast": "2607", 
+                "eth_outmcast": "20", 
                 "eth_outpause": "0", 
-                "eth_outpkts": "10977", 
-                "eth_outrate1_bits": "2992", 
-                "eth_outrate1_pkts": "2", 
-                "eth_outrate1_summary_bits": "2.99 Kbps", 
-                "eth_outrate1_summary_pkts": "2 pps", 
-                "eth_outrate2_bits": "360", 
+                "eth_outpkts": "142", 
+                "eth_outrate1_bits": "1560", 
+                "eth_outrate1_pkts": "1", 
+                "eth_outrate1_summary_bits": "1.56 Kbps", 
+                "eth_outrate1_summary_pkts": "1 pps", 
+                "eth_outrate2_bits": "192", 
                 "eth_outrate2_pkts": "0", 
-                "eth_outrate2_summary_bits": "360 bps", 
+                "eth_outrate2_summary_bits": "192 bps", 
                 "eth_outrate2_summary_pkts": "0 pps", 
-                "eth_outucast": "8366", 
+                "eth_outucast": "118", 
                 "eth_overrun": "0", 
                 "eth_reliability": "255", 
                 "eth_reset_cntr": "1", 
@@ -142,15 +142,15 @@
                 "eth_bad_proto": "0", 
                 "eth_beacon": "off", 
                 "eth_bia_addr": "5206.8d3e.0102", 
-                "eth_bw": "10000000", 
-                "eth_bw_str": "10000000 Kbit", 
+                "eth_bw": "1000000", 
+                "eth_bw_str": "1000000 Kbit", 
                 "eth_clear_counters": "never", 
                 "eth_coll": "0", 
                 "eth_crc": "0", 
                 "eth_deferred": "0", 
                 "eth_dly": "10", 
                 "eth_dribble": "0", 
-                "eth_duplex": "auto", 
+                "eth_duplex": "full", 
                 "eth_eee_state": "n/a", 
                 "eth_ethertype": "0x8100", 
                 "eth_frame": "0", 
@@ -179,7 +179,7 @@
                 "eth_jumbo_inpkts": "0", 
                 "eth_jumbo_outpkts": "0", 
                 "eth_latecoll": "0", 
-                "eth_link_flapped": "never", 
+                "eth_link_flapped": "00:17:32", 
                 "eth_load_interval1_rx": "30", 
                 "eth_load_interval1_tx": "30", 
                 "eth_load_interval2_rx": "300", 
@@ -193,27 +193,27 @@
                 "eth_oper_fec_state": "off", 
                 "eth_out_flowctrl": "off", 
                 "eth_outbcast": "0", 
-                "eth_outbytes": "0", 
+                "eth_outbytes": "36440", 
                 "eth_outdiscard": "0", 
                 "eth_outerr": "0", 
-                "eth_outmcast": "639139147084201984", 
+                "eth_outmcast": "549", 
                 "eth_outpause": "0", 
-                "eth_outpkts": "639139147084201984", 
-                "eth_outrate1_bits": "0", 
+                "eth_outpkts": "549", 
+                "eth_outrate1_bits": "256", 
                 "eth_outrate1_pkts": "0", 
-                "eth_outrate1_summary_bits": "0 bps", 
+                "eth_outrate1_summary_bits": "256 bps", 
                 "eth_outrate1_summary_pkts": "0 pps", 
-                "eth_outrate2_bits": "0", 
+                "eth_outrate2_bits": "264", 
                 "eth_outrate2_pkts": "0", 
-                "eth_outrate2_summary_bits": "0 bps", 
+                "eth_outrate2_summary_bits": "264 bps", 
                 "eth_outrate2_summary_pkts": "0 pps", 
                 "eth_outucast": "0", 
                 "eth_overrun": "0", 
                 "eth_reliability": "255", 
-                "eth_reset_cntr": "0", 
+                "eth_reset_cntr": "1", 
                 "eth_runts": "0", 
                 "eth_rxload": "1", 
-                "eth_speed": "auto-speed", 
+                "eth_speed": "1000 Mb/s", 
                 "eth_storm_supp": "0", 
                 "eth_swt_monitor": "off", 
                 "eth_txload": "1", 
@@ -222,8 +222,7 @@
                 "interface": "Ethernet1/2", 
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
-                "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state": "up"
             }, 
             {
                 "admin_state": "up", 
@@ -235,15 +234,15 @@
                 "eth_bad_proto": "0", 
                 "eth_beacon": "off", 
                 "eth_bia_addr": "5206.8d3e.0103", 
-                "eth_bw": "10000000", 
-                "eth_bw_str": "10000000 Kbit", 
+                "eth_bw": "1000000", 
+                "eth_bw_str": "1000000 Kbit", 
                 "eth_clear_counters": "never", 
                 "eth_coll": "0", 
                 "eth_crc": "0", 
                 "eth_deferred": "0", 
                 "eth_dly": "10", 
                 "eth_dribble": "0", 
-                "eth_duplex": "auto", 
+                "eth_duplex": "full", 
                 "eth_eee_state": "n/a", 
                 "eth_ethertype": "0x8100", 
                 "eth_frame": "0", 
@@ -272,7 +271,7 @@
                 "eth_jumbo_inpkts": "0", 
                 "eth_jumbo_outpkts": "0", 
                 "eth_latecoll": "0", 
-                "eth_link_flapped": "never", 
+                "eth_link_flapped": "00:17:32", 
                 "eth_load_interval1_rx": "30", 
                 "eth_load_interval1_tx": "30", 
                 "eth_load_interval2_rx": "300", 
@@ -286,27 +285,27 @@
                 "eth_oper_fec_state": "off", 
                 "eth_out_flowctrl": "off", 
                 "eth_outbcast": "0", 
-                "eth_outbytes": "0", 
+                "eth_outbytes": "36440", 
                 "eth_outdiscard": "0", 
                 "eth_outerr": "0", 
-                "eth_outmcast": "0", 
+                "eth_outmcast": "549", 
                 "eth_outpause": "0", 
-                "eth_outpkts": "0", 
-                "eth_outrate1_bits": "0", 
+                "eth_outpkts": "549", 
+                "eth_outrate1_bits": "256", 
                 "eth_outrate1_pkts": "0", 
-                "eth_outrate1_summary_bits": "0 bps", 
+                "eth_outrate1_summary_bits": "256 bps", 
                 "eth_outrate1_summary_pkts": "0 pps", 
-                "eth_outrate2_bits": "0", 
+                "eth_outrate2_bits": "264", 
                 "eth_outrate2_pkts": "0", 
-                "eth_outrate2_summary_bits": "0 bps", 
+                "eth_outrate2_summary_bits": "264 bps", 
                 "eth_outrate2_summary_pkts": "0 pps", 
                 "eth_outucast": "0", 
                 "eth_overrun": "0", 
                 "eth_reliability": "255", 
-                "eth_reset_cntr": "0", 
+                "eth_reset_cntr": "1", 
                 "eth_runts": "0", 
                 "eth_rxload": "1", 
-                "eth_speed": "auto-speed", 
+                "eth_speed": "1000 Mb/s", 
                 "eth_storm_supp": "0", 
                 "eth_swt_monitor": "off", 
                 "eth_txload": "1", 
@@ -315,8 +314,7 @@
                 "interface": "Ethernet1/3", 
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
-                "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state": "up"
             }, 
             {
                 "admin_state": "up", 
@@ -412,7 +410,7 @@
                 "state_rsn_desc": "Link not connected"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -502,10 +500,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -595,10 +593,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -688,10 +686,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -781,10 +779,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -874,10 +872,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -967,10 +965,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -1060,10 +1058,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -1153,10 +1151,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -1246,10 +1244,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -1339,10 +1337,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -1432,10 +1430,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -1525,10 +1523,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -1618,10 +1616,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -1711,10 +1709,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -1804,10 +1802,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -1897,10 +1895,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -1990,10 +1988,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -2083,10 +2081,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -2176,10 +2174,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -2269,10 +2267,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -2362,10 +2360,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -2455,10 +2453,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -2548,10 +2546,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -2641,10 +2639,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -2734,10 +2732,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -2827,10 +2825,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -2920,10 +2918,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -3013,10 +3011,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -3106,10 +3104,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -3199,10 +3197,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -3292,10 +3290,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -3385,10 +3383,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -3478,10 +3476,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -3571,10 +3569,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -3664,10 +3662,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -3757,10 +3755,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -3850,10 +3848,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -3943,10 +3941,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -4036,10 +4034,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -4129,10 +4127,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -4222,10 +4220,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -4315,10 +4313,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -4408,10 +4406,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -4501,10 +4499,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -4594,10 +4592,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -4687,10 +4685,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -4780,10 +4778,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -4873,10 +4871,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -4966,10 +4964,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -5059,10 +5057,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -5152,10 +5150,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -5245,10 +5243,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -5338,10 +5336,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -5431,10 +5429,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -5524,10 +5522,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -5617,10 +5615,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -5710,10 +5708,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -5803,10 +5801,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -5896,10 +5894,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "encapsulation": "ARPA", 
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
@@ -5989,10 +5987,10 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
-                "admin_state": "up", 
+                "admin_state": "down", 
                 "desc": "Loopback 100", 
                 "encapsulation": "LOOPBACK", 
                 "eth_bw": "8000000", 
@@ -6024,7 +6022,8 @@
                 "loop_out_pkts": "0", 
                 "loop_out_underruns": "0", 
                 "medium": "broadcast", 
-                "state": "up"
+                "state": "down", 
+                "state_rsn_desc": "Administratively down"
             }
         ]
     }

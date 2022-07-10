@@ -6,18 +6,18 @@
 ###### Bits: 24
 ###### Packets: 0
 ##### Broadcast: 0
-##### Bytes: 631202
-##### Multicast: 2998
-##### Packets: 2998
+##### Bytes: 5481
+##### Multicast: 26
+##### Packets: 26
 ##### Unicast: 0
 #### Output
 ##### Average
 ###### Bits: 24
 ###### Packets: 0
 #### Broadcast: 0
-#### Bytes: 593143
-#### Multicast: 2613
-#### Packets: 2613
+#### Bytes: 4759
+#### Multicast: 21
+#### Packets: 21
 #### Unicast: 0
 ## Interface: Ethernet1/1
 ### Administrative State: up
@@ -50,32 +50,32 @@
 #### Input
 ##### Flow Control: off
 ##### IF Down Drops: 0
-##### Broadcast: 88
-##### Bytes: 10170014
+##### Broadcast: 2
+##### Bytes: 219317
 ##### Discards: 0
 ##### Errors: 0
 ##### Multicast: 0
 ##### Pause: 0
-##### Packets: 9199
+##### Packets: 142
 ##### Rates
-###### 1 Bits: 58736
+###### 1 Bits: 26288
 ###### 1 Packets: 2
-###### 1 Summary Bits: 58.74 Kbps
+###### 1 Summary Bits: 26.29 Kbps
 ###### 1 Summary Packets: 2 pps
-###### 2 Bits: 7592
+###### 2 Bits: 4400
 ###### 2 Packets: 0
-###### 2 Summary Bits: 7.59 Kbps
+###### 2 Summary Bits: 4.40 Kbps
 ###### 2 Summary Packets: 0 pps
-##### Unicast: 9111
+##### Unicast: 140
 #### IP
 ##### Address: 192.168.255.138
 ##### Mask: 24
 ##### Prefix: 192.168.255.0
 #### Jumbo
-##### Input Packets: 2069
+##### Input Packets: 30
 ##### Output Packets: 0
 #### Late Collisions: 0
-#### Link Flapped: 1d19h
+#### Link Flapped: 00:17:33
 #### Load Interval
 ##### 1 
 ###### RX: 30
@@ -94,22 +94,22 @@
 #### Output
 ##### Flow Control:  off
 ##### Broadcast: 4
-##### Bytes: 1634127
+##### Bytes: 15198
 ##### Discards: 0
 ##### Errors: 0
-##### Multicast: 2607
+##### Multicast: 20
 ##### Pause: 0
-##### Packets: 10977
+##### Packets: 142
 ##### Rate
-###### 1 Bits: 2992
-###### 1 Packets: 2
-###### 1 Summary Bits: 2.99 Kbps
-###### 1 Summary Packets: 2 pps
-###### 2 Bits: 360
+###### 1 Bits: 1560
+###### 1 Packets: 1
+###### 1 Summary Bits: 1.56 Kbps
+###### 1 Summary Packets: 1 pps
+###### 2 Bits: 192
 ###### 2 Packets: 0
-###### 2 Summary Bits:  360 bps
+###### 2 Summary Bits:  192 bps
 ###### 2 Summary Packets: 0 pps
-##### Unicast: 8366
+##### Unicast: 118
 #### Overruns: 0
 #### Reliability: 255
 #### Reset Counters: 1
@@ -140,14 +140,14 @@
 ##### BIA: 5206.8d3e.0102
 ##### MAC Address: 5206.8d3e.0102
 ##### Description: 100/1000/10000 Ethernet
-#### Bandwidth: 10000000
+#### Bandwidth: 1000000
 #### Clear Counters: never
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
 #### Delay: 10
 #### Dribble: 0
-#### Duplex: auto
+#### Duplex: full
 #### EEE State: n/a
 #### Ethertype: 0x8100
 #### Frame: 0
@@ -181,7 +181,7 @@
 ##### Input Packets: 0
 ##### Output Packets: 0
 #### Late Collisions: 0
-#### Link Flapped: never
+#### Link Flapped: 00:17:32
 #### Load Interval
 ##### 1 
 ###### RX: 30
@@ -200,37 +200,37 @@
 #### Output
 ##### Flow Control:  off
 ##### Broadcast: 0
-##### Bytes: 0
+##### Bytes: 36440
 ##### Discards: 0
 ##### Errors: 0
-##### Multicast: 639139147084201984
+##### Multicast: 549
 ##### Pause: 0
-##### Packets: 639139147084201984
+##### Packets: 549
 ##### Rate
-###### 1 Bits: 0
+###### 1 Bits: 256
 ###### 1 Packets: 0
-###### 1 Summary Bits: 0 bps
+###### 1 Summary Bits: 256 bps
 ###### 1 Summary Packets: 0 pps
-###### 2 Bits: 0
+###### 2 Bits: 264
 ###### 2 Packets: 0
-###### 2 Summary Bits:  0 bps
+###### 2 Summary Bits:  264 bps
 ###### 2 Summary Packets: 0 pps
 ##### Unicast: 0
 #### Overruns: 0
 #### Reliability: 255
-#### Reset Counters: 0
+#### Reset Counters: 1
 #### Runts: 0
 #### Load
 ##### RX: 1
 ##### TX: 1
-#### Speed: auto-speed
+#### Speed: 1000 Mb/s
 #### Storm Supp: 0
 #### SWT Monitor: off
 #### Underruns: 0
 #### Watchdog: 0
 ### Medium: broadcast
 ### Share State: Dedicated
-### State: down
+### State: up
 ## Interface: Ethernet1/3
 ### Administrative State: up
 ### Description: N/A
@@ -246,14 +246,14 @@
 ##### BIA: 5206.8d3e.0103
 ##### MAC Address: 5206.8d3e.0103
 ##### Description: 100/1000/10000 Ethernet
-#### Bandwidth: 10000000
+#### Bandwidth: 1000000
 #### Clear Counters: never
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
 #### Delay: 10
 #### Dribble: 0
-#### Duplex: auto
+#### Duplex: full
 #### EEE State: n/a
 #### Ethertype: 0x8100
 #### Frame: 0
@@ -287,7 +287,7 @@
 ##### Input Packets: 0
 ##### Output Packets: 0
 #### Late Collisions: 0
-#### Link Flapped: never
+#### Link Flapped: 00:17:32
 #### Load Interval
 ##### 1 
 ###### RX: 30
@@ -306,37 +306,37 @@
 #### Output
 ##### Flow Control:  off
 ##### Broadcast: 0
-##### Bytes: 0
+##### Bytes: 36440
 ##### Discards: 0
 ##### Errors: 0
-##### Multicast: 0
+##### Multicast: 549
 ##### Pause: 0
-##### Packets: 0
+##### Packets: 549
 ##### Rate
-###### 1 Bits: 0
+###### 1 Bits: 256
 ###### 1 Packets: 0
-###### 1 Summary Bits: 0 bps
+###### 1 Summary Bits: 256 bps
 ###### 1 Summary Packets: 0 pps
-###### 2 Bits: 0
+###### 2 Bits: 264
 ###### 2 Packets: 0
-###### 2 Summary Bits:  0 bps
+###### 2 Summary Bits:  264 bps
 ###### 2 Summary Packets: 0 pps
 ##### Unicast: 0
 #### Overruns: 0
 #### Reliability: 255
-#### Reset Counters: 0
+#### Reset Counters: 1
 #### Runts: 0
 #### Load
 ##### RX: 1
 ##### TX: 1
-#### Speed: auto-speed
+#### Speed: 1000 Mb/s
 #### Storm Supp: 0
 #### SWT Monitor: off
 #### Underruns: 0
 #### Watchdog: 0
 ### Medium: broadcast
 ### Share State: Dedicated
-### State: down
+### State: up
 ## Interface: Ethernet1/4
 ### Administrative State: up
 ### Description: N/A
@@ -444,7 +444,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/5
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -550,7 +550,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/6
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -656,7 +656,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/7
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -762,7 +762,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/8
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -868,7 +868,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/9
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -974,7 +974,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/10
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -1080,7 +1080,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/11
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -1186,7 +1186,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/12
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -1292,7 +1292,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/13
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -1398,7 +1398,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/14
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -1504,7 +1504,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/15
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -1610,7 +1610,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/16
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -1716,7 +1716,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/17
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -1822,7 +1822,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/18
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -1928,7 +1928,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/19
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -2034,7 +2034,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/20
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -2140,7 +2140,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/21
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -2246,7 +2246,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/22
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -2352,7 +2352,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/23
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -2458,7 +2458,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/24
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -2564,7 +2564,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/25
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -2670,7 +2670,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/26
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -2776,7 +2776,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/27
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -2882,7 +2882,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/28
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -2988,7 +2988,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/29
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -3094,7 +3094,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/30
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -3200,7 +3200,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/31
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -3306,7 +3306,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/32
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -3412,7 +3412,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/33
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -3518,7 +3518,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/34
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -3624,7 +3624,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/35
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -3730,7 +3730,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/36
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -3836,7 +3836,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/37
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -3942,7 +3942,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/38
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -4048,7 +4048,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/39
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -4154,7 +4154,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/40
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -4260,7 +4260,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/41
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -4366,7 +4366,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/42
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -4472,7 +4472,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/43
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -4578,7 +4578,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/44
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -4684,7 +4684,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/45
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -4790,7 +4790,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/46
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -4896,7 +4896,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/47
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -5002,7 +5002,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/48
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -5108,7 +5108,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/49
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -5214,7 +5214,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/50
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -5320,7 +5320,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/51
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -5426,7 +5426,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/52
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -5532,7 +5532,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/53
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -5638,7 +5638,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/54
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -5744,7 +5744,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/55
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -5850,7 +5850,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/56
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -5956,7 +5956,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/57
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -6062,7 +6062,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/58
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -6168,7 +6168,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/59
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -6274,7 +6274,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/60
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -6380,7 +6380,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/61
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -6486,7 +6486,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/62
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -6592,7 +6592,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/63
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -6698,7 +6698,7 @@
 ### Share State: Dedicated
 ### State: down
 ## Interface: Ethernet1/64
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
