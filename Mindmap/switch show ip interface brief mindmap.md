@@ -2,9 +2,9 @@
 # Show IP Interface Brief
 ## Name: Lo100
 ### State
-#### Administrative: down
-#### Link: down
-#### Protocol: down
+#### Administrative: up
+#### Link: up
+#### Protocol: up
 ### IOD: 70
 ### IP Disabled: FALSE
 ### Prefix: 192.168.100.100
