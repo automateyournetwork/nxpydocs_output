@@ -407,7 +407,7 @@
                 "medium": "broadcast", 
                 "share_state": "Dedicated", 
                 "state": "down", 
-                "state_rsn_desc": "Link not connected"
+                "state_rsn_desc": "Administratively down"
             }, 
             {
                 "admin_state": "down", 
