@@ -1,0 +1,14 @@
+{
+    "TABLE_intf": {
+        "ROW_intf": {
+            "admin-state": "up", 
+            "intf-name": "Eth1/1", 
+            "iod": "5", 
+            "ip-disabled": "FALSE", 
+            "link-state": "up", 
+            "prefix": "192.168.255.138", 
+            "proto-state": "up", 
+            "vrf-name-out": "default"
+        }
+    }
+}
