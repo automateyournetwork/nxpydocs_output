@@ -6,18 +6,18 @@
 ###### Bits: 24
 ###### Packets: 0
 ##### Broadcast: 0
-##### Bytes: 261167
-##### Multicast: 1240
-##### Packets: 1240
+##### Bytes: 269834
+##### Multicast: 1282
+##### Packets: 1282
 ##### Unicast: 0
 #### Output
 ##### Average
 ###### Bits: 24
 ###### Packets: 0
 #### Broadcast: 0
-#### Bytes: 245833
-#### Multicast: 1083
-#### Packets: 1083
+#### Bytes: 253097
+#### Multicast: 1115
+#### Packets: 1115
 #### Unicast: 0
 ## Interface: Ethernet1/1
 ### Administrative State: up
@@ -50,32 +50,32 @@
 #### Input
 ##### Flow Control: off
 ##### IF Down Drops: 0
-##### Broadcast: 37
-##### Bytes: 706477
+##### Broadcast: 38
+##### Bytes: 955789
 ##### Discards: 0
 ##### Errors: 0
 ##### Multicast: 0
 ##### Pause: 0
-##### Packets: 583
+##### Packets: 784
 ##### Rates
-###### 1 Bits: 42528
-###### 1 Packets: 2
-###### 1 Summary Bits: 42.53 Kbps
-###### 1 Summary Packets: 2 pps
-###### 2 Bits: 6248
+###### 1 Bits: 81432
+###### 1 Packets: 4
+###### 1 Summary Bits: 81.43 Kbps
+###### 1 Summary Packets: 4 pps
+###### 2 Bits: 9272
 ###### 2 Packets: 0
-###### 2 Summary Bits: 6.25 Kbps
+###### 2 Summary Bits: 9.27 Kbps
 ###### 2 Summary Packets: 0 pps
-##### Unicast: 546
+##### Unicast: 746
 #### IP
 ##### Address: 192.168.255.138
 ##### Mask: 24
 ##### Prefix: 192.168.255.0
 #### Jumbo
-##### Input Packets: 124
+##### Input Packets: 174
 ##### Output Packets: 0
 #### Late Collisions: 0
-#### Link Flapped: 17:56:39
+#### Link Flapped: 18:29:02
 #### Load Interval
 ##### 1 
 ###### RX: 30
@@ -94,22 +94,22 @@
 #### Output
 ##### Flow Control:  off
 ##### Broadcast: 4
-##### Bytes: 312855
+##### Bytes: 341170
 ##### Discards: 0
 ##### Errors: 0
-##### Multicast: 1081
+##### Multicast: 1114
 ##### Pause: 0
-##### Packets: 1614
+##### Packets: 1833
 ##### Rate
-###### 1 Bits: 2096
-###### 1 Packets: 2
-###### 1 Summary Bits: 2.10 Kbps
-###### 1 Summary Packets: 2 pps
-###### 2 Bits: 272
+###### 1 Bits: 3800
+###### 1 Packets: 4
+###### 1 Summary Bits: 3.80 Kbps
+###### 1 Summary Packets: 4 pps
+###### 2 Bits: 416
 ###### 2 Packets: 0
-###### 2 Summary Bits:  272 bps
+###### 2 Summary Bits:  416 bps
 ###### 2 Summary Packets: 0 pps
-##### Unicast: 529
+##### Unicast: 715
 #### Overruns: 0
 #### Reliability: 255
 #### Reset Counters: 1
@@ -181,7 +181,7 @@
 ##### Input Packets: 0
 ##### Output Packets: 0
 #### Late Collisions: 0
-#### Link Flapped: 17:56:38
+#### Link Flapped: 18:29:01
 #### Load Interval
 ##### 1 
 ###### RX: 30
@@ -200,16 +200,16 @@
 #### Output
 ##### Flow Control:  off
 ##### Broadcast: 0
-##### Bytes: 2196175
+##### Bytes: 2262370
 ##### Discards: 0
 ##### Errors: 0
-##### Multicast: 33450
+##### Multicast: 34457
 ##### Pause: 0
-##### Packets: 33450
+##### Packets: 34457
 ##### Rate
-###### 1 Bits: 112
+###### 1 Bits: 216
 ###### 1 Packets: 0
-###### 1 Summary Bits: 112 bps
+###### 1 Summary Bits: 216 bps
 ###### 1 Summary Packets: 0 pps
 ###### 2 Bits: 264
 ###### 2 Packets: 0
@@ -287,7 +287,7 @@
 ##### Input Packets: 0
 ##### Output Packets: 0
 #### Late Collisions: 0
-#### Link Flapped: 17:56:38
+#### Link Flapped: 18:29:01
 #### Load Interval
 ##### 1 
 ###### RX: 30
@@ -306,16 +306,16 @@
 #### Output
 ##### Flow Control:  off
 ##### Broadcast: 0
-##### Bytes: 2196175
+##### Bytes: 2262370
 ##### Discards: 0
 ##### Errors: 4294967313
-##### Multicast: 33450
+##### Multicast: 34457
 ##### Pause: 0
-##### Packets: 33450
+##### Packets: 34457
 ##### Rate
-###### 1 Bits: 112
+###### 1 Bits: 216
 ###### 1 Packets: 0
-###### 1 Summary Bits: 112 bps
+###### 1 Summary Bits: 216 bps
 ###### 1 Summary Packets: 0 pps
 ###### 2 Bits: 264
 ###### 2 Packets: 0
@@ -323,7 +323,7 @@
 ###### 2 Summary Packets: 0 pps
 ##### Unicast: 0
 #### Overruns: 0
-#### Reliability: 26352
+#### Reliability: 189
 #### Reset Counters: 1
 #### Runts: 0
 #### Load
