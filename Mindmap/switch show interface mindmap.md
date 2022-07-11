@@ -6,18 +6,18 @@
 ###### Bits: 24
 ###### Packets: 0
 ##### Broadcast: 0
-##### Bytes: 269834
-##### Multicast: 1282
-##### Packets: 1282
+##### Bytes: 1085
+##### Multicast: 5
+##### Packets: 5
 ##### Unicast: 0
 #### Output
 ##### Average
 ###### Bits: 24
 ###### Packets: 0
 #### Broadcast: 0
-#### Bytes: 253097
-#### Multicast: 1115
-#### Packets: 1115
+#### Bytes: 1135
+#### Multicast: 5
+#### Packets: 5
 #### Unicast: 0
 ## Interface: Ethernet1/1
 ### Administrative State: up
@@ -35,7 +35,7 @@
 ##### MAC Address: 5206.8d3e.1b08
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 1000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -50,32 +50,32 @@
 #### Input
 ##### Flow Control: off
 ##### IF Down Drops: 0
-##### Broadcast: 38
-##### Bytes: 955789
+##### Broadcast: 0
+##### Bytes: 241093
 ##### Discards: 0
 ##### Errors: 0
 ##### Multicast: 0
 ##### Pause: 0
-##### Packets: 784
+##### Packets: 154
 ##### Rates
-###### 1 Bits: 81432
-###### 1 Packets: 4
-###### 1 Summary Bits: 81.43 Kbps
-###### 1 Summary Packets: 4 pps
-###### 2 Bits: 9272
+###### 1 Bits: 15248
+###### 1 Packets: 1
+###### 1 Summary Bits: 15.25 Kbps
+###### 1 Summary Packets: 1 pps
+###### 2 Bits: 2504
 ###### 2 Packets: 0
-###### 2 Summary Bits: 9.27 Kbps
+###### 2 Summary Bits: 2.50 Kbps
 ###### 2 Summary Packets: 0 pps
-##### Unicast: 746
+##### Unicast: 154
 #### IP
 ##### Address: 192.168.255.138
 ##### Mask: 24
 ##### Prefix: 192.168.255.0
 #### Jumbo
-##### Input Packets: 174
+##### Input Packets: 41
 ##### Output Packets: 0
 #### Late Collisions: 0
-#### Link Flapped: 18:29:02
+#### Link Flapped: 1d00h
 #### Load Interval
 ##### 1 
 ###### RX: 30
@@ -93,26 +93,26 @@
 ##### State: off
 #### Output
 ##### Flow Control:  off
-##### Broadcast: 4
-##### Bytes: 341170
+##### Broadcast: 0
+##### Bytes: 12029
 ##### Discards: 0
 ##### Errors: 0
-##### Multicast: 1114
+##### Multicast: 5
 ##### Pause: 0
-##### Packets: 1833
+##### Packets: 138
 ##### Rate
-###### 1 Bits: 3800
-###### 1 Packets: 4
-###### 1 Summary Bits: 3.80 Kbps
-###### 1 Summary Packets: 4 pps
-###### 2 Bits: 416
+###### 1 Bits: 1112
+###### 1 Packets: 1
+###### 1 Summary Bits: 1.11 Kbps
+###### 1 Summary Packets: 1 pps
+###### 2 Bits: 128
 ###### 2 Packets: 0
-###### 2 Summary Bits:  416 bps
+###### 2 Summary Bits:  128 bps
 ###### 2 Summary Packets: 0 pps
-##### Unicast: 715
+##### Unicast: 133
 #### Overruns: 0
 #### Reliability: 255
-#### Reset Counters: 1
+#### Reset Counters: 0
 #### Runts: 0
 #### Load
 ##### RX: 1
@@ -126,7 +126,7 @@
 ### Share State: Dedicated
 ### State: up
 ## Interface: Ethernet1/2
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -140,14 +140,14 @@
 ##### BIA: 5206.8d3e.0102
 ##### MAC Address: 5206.8d3e.0102
 ##### Description: 100/1000/10000 Ethernet
-#### Bandwidth: 1000000
-#### Clear Counters: never
+#### Bandwidth: 10000000
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
 #### Delay: 10
 #### Dribble: 0
-#### Duplex: full
+#### Duplex: auto
 #### EEE State: n/a
 #### Ethertype: 0x8100
 #### Frame: 0
@@ -181,7 +181,7 @@
 ##### Input Packets: 0
 ##### Output Packets: 0
 #### Late Collisions: 0
-#### Link Flapped: 18:29:01
+#### Link Flapped: 00:05:11
 #### Load Interval
 ##### 1 
 ###### RX: 30
@@ -200,39 +200,39 @@
 #### Output
 ##### Flow Control:  off
 ##### Broadcast: 0
-##### Bytes: 2262370
+##### Bytes: 0
 ##### Discards: 0
 ##### Errors: 0
-##### Multicast: 34457
+##### Multicast: 0
 ##### Pause: 0
-##### Packets: 34457
+##### Packets: 0
 ##### Rate
-###### 1 Bits: 216
+###### 1 Bits: 0
 ###### 1 Packets: 0
-###### 1 Summary Bits: 216 bps
+###### 1 Summary Bits: 0 bps
 ###### 1 Summary Packets: 0 pps
-###### 2 Bits: 264
+###### 2 Bits: 0
 ###### 2 Packets: 0
-###### 2 Summary Bits:  264 bps
+###### 2 Summary Bits:  0 bps
 ###### 2 Summary Packets: 0 pps
 ##### Unicast: 0
 #### Overruns: 0
 #### Reliability: 255
-#### Reset Counters: 1
+#### Reset Counters: 0
 #### Runts: 0
 #### Load
 ##### RX: 1
 ##### TX: 1
-#### Speed: 1000 Mb/s
+#### Speed: auto-speed
 #### Storm Supp: 0
 #### SWT Monitor: off
 #### Underruns: 0
 #### Watchdog: 0
 ### Medium: broadcast
 ### Share State: Dedicated
-### State: up
+### State: down
 ## Interface: Ethernet1/3
-### Administrative State: up
+### Administrative State: down
 ### Description: N/A
 ### Encapsulation: ARPA
 ### Ethernet
@@ -246,14 +246,14 @@
 ##### BIA: 5206.8d3e.0103
 ##### MAC Address: 5206.8d3e.0103
 ##### Description: 100/1000/10000 Ethernet
-#### Bandwidth: 1000000
-#### Clear Counters: never
+#### Bandwidth: 10000000
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
 #### Delay: 10
 #### Dribble: 0
-#### Duplex: full
+#### Duplex: auto
 #### EEE State: n/a
 #### Ethertype: 0x8100
 #### Frame: 0
@@ -287,7 +287,7 @@
 ##### Input Packets: 0
 ##### Output Packets: 0
 #### Late Collisions: 0
-#### Link Flapped: 18:29:01
+#### Link Flapped: 00:05:11
 #### Load Interval
 ##### 1 
 ###### RX: 30
@@ -306,37 +306,37 @@
 #### Output
 ##### Flow Control:  off
 ##### Broadcast: 0
-##### Bytes: 2262370
+##### Bytes: 0
 ##### Discards: 0
-##### Errors: 4294967313
-##### Multicast: 34457
+##### Errors: 0
+##### Multicast: 0
 ##### Pause: 0
-##### Packets: 34457
+##### Packets: 0
 ##### Rate
-###### 1 Bits: 216
+###### 1 Bits: 0
 ###### 1 Packets: 0
-###### 1 Summary Bits: 216 bps
+###### 1 Summary Bits: 0 bps
 ###### 1 Summary Packets: 0 pps
-###### 2 Bits: 264
+###### 2 Bits: 0
 ###### 2 Packets: 0
-###### 2 Summary Bits:  264 bps
+###### 2 Summary Bits:  0 bps
 ###### 2 Summary Packets: 0 pps
 ##### Unicast: 0
 #### Overruns: 0
-#### Reliability: 189
-#### Reset Counters: 1
+#### Reliability: 255
+#### Reset Counters: 0
 #### Runts: 0
 #### Load
 ##### RX: 1
 ##### TX: 1
-#### Speed: 1000 Mb/s
+#### Speed: auto-speed
 #### Storm Supp: 0
 #### SWT Monitor: off
 #### Underruns: 0
 #### Watchdog: 0
 ### Medium: broadcast
 ### Share State: Dedicated
-### State: up
+### State: down
 ## Interface: Ethernet1/4
 ### Administrative State: up
 ### Description: N/A
@@ -353,7 +353,7 @@
 ##### MAC Address: 5206.8d3e.0104
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -459,7 +459,7 @@
 ##### MAC Address: 5206.8d3e.0105
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -565,7 +565,7 @@
 ##### MAC Address: 5206.8d3e.0106
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -671,7 +671,7 @@
 ##### MAC Address: 5206.8d3e.0107
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -777,7 +777,7 @@
 ##### MAC Address: 5206.8d3e.0108
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -883,7 +883,7 @@
 ##### MAC Address: 5206.8d3e.0109
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -989,7 +989,7 @@
 ##### MAC Address: 5206.8d3e.010a
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -1095,7 +1095,7 @@
 ##### MAC Address: 5206.8d3e.010b
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -1201,7 +1201,7 @@
 ##### MAC Address: 5206.8d3e.010c
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -1307,7 +1307,7 @@
 ##### MAC Address: 5206.8d3e.010d
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -1413,7 +1413,7 @@
 ##### MAC Address: 5206.8d3e.010e
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -1519,7 +1519,7 @@
 ##### MAC Address: 5206.8d3e.010f
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -1625,7 +1625,7 @@
 ##### MAC Address: 5206.8d3e.0110
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -1731,7 +1731,7 @@
 ##### MAC Address: 5206.8d3e.0111
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -1837,7 +1837,7 @@
 ##### MAC Address: 5206.8d3e.0112
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -1943,7 +1943,7 @@
 ##### MAC Address: 5206.8d3e.0113
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -2049,7 +2049,7 @@
 ##### MAC Address: 5206.8d3e.0114
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -2155,7 +2155,7 @@
 ##### MAC Address: 5206.8d3e.0115
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -2261,7 +2261,7 @@
 ##### MAC Address: 5206.8d3e.0116
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -2367,7 +2367,7 @@
 ##### MAC Address: 5206.8d3e.0117
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -2473,7 +2473,7 @@
 ##### MAC Address: 5206.8d3e.0118
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -2579,7 +2579,7 @@
 ##### MAC Address: 5206.8d3e.0119
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -2685,7 +2685,7 @@
 ##### MAC Address: 5206.8d3e.011a
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -2791,7 +2791,7 @@
 ##### MAC Address: 5206.8d3e.011b
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -2897,7 +2897,7 @@
 ##### MAC Address: 5206.8d3e.011c
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -3003,7 +3003,7 @@
 ##### MAC Address: 5206.8d3e.011d
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -3109,7 +3109,7 @@
 ##### MAC Address: 5206.8d3e.011e
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -3215,7 +3215,7 @@
 ##### MAC Address: 5206.8d3e.011f
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -3321,7 +3321,7 @@
 ##### MAC Address: 5206.8d3e.0120
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -3427,7 +3427,7 @@
 ##### MAC Address: 5206.8d3e.0121
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -3533,7 +3533,7 @@
 ##### MAC Address: 5206.8d3e.0122
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -3639,7 +3639,7 @@
 ##### MAC Address: 5206.8d3e.0123
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -3745,7 +3745,7 @@
 ##### MAC Address: 5206.8d3e.0124
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -3851,7 +3851,7 @@
 ##### MAC Address: 5206.8d3e.0125
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -3957,7 +3957,7 @@
 ##### MAC Address: 5206.8d3e.0126
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -4063,7 +4063,7 @@
 ##### MAC Address: 5206.8d3e.0127
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -4169,7 +4169,7 @@
 ##### MAC Address: 5206.8d3e.0128
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -4275,7 +4275,7 @@
 ##### MAC Address: 5206.8d3e.0129
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -4381,7 +4381,7 @@
 ##### MAC Address: 5206.8d3e.012a
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -4487,7 +4487,7 @@
 ##### MAC Address: 5206.8d3e.012b
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -4593,7 +4593,7 @@
 ##### MAC Address: 5206.8d3e.012c
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -4699,7 +4699,7 @@
 ##### MAC Address: 5206.8d3e.012d
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -4805,7 +4805,7 @@
 ##### MAC Address: 5206.8d3e.012e
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -4911,7 +4911,7 @@
 ##### MAC Address: 5206.8d3e.012f
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -5017,7 +5017,7 @@
 ##### MAC Address: 5206.8d3e.0130
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -5123,7 +5123,7 @@
 ##### MAC Address: 5206.8d3e.0131
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -5229,7 +5229,7 @@
 ##### MAC Address: 5206.8d3e.0132
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -5335,7 +5335,7 @@
 ##### MAC Address: 5206.8d3e.0133
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -5441,7 +5441,7 @@
 ##### MAC Address: 5206.8d3e.0134
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -5547,7 +5547,7 @@
 ##### MAC Address: 5206.8d3e.0135
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -5653,7 +5653,7 @@
 ##### MAC Address: 5206.8d3e.0136
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -5759,7 +5759,7 @@
 ##### MAC Address: 5206.8d3e.0137
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -5865,7 +5865,7 @@
 ##### MAC Address: 5206.8d3e.0138
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -5971,7 +5971,7 @@
 ##### MAC Address: 5206.8d3e.0139
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -6077,7 +6077,7 @@
 ##### MAC Address: 5206.8d3e.013a
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -6183,7 +6183,7 @@
 ##### MAC Address: 5206.8d3e.013b
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -6289,7 +6289,7 @@
 ##### MAC Address: 5206.8d3e.013c
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -6395,7 +6395,7 @@
 ##### MAC Address: 5206.8d3e.013d
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -6501,7 +6501,7 @@
 ##### MAC Address: 5206.8d3e.013e
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -6607,7 +6607,7 @@
 ##### MAC Address: 5206.8d3e.013f
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
@@ -6713,7 +6713,7 @@
 ##### MAC Address: 5206.8d3e.0140
 ##### Description: 100/1000/10000 Ethernet
 #### Bandwidth: 10000000
-#### Clear Counters: never
+#### Clear Counters: 00:05:05
 #### Collisions: 0
 #### CRC: 0
 #### Deferred: 0
