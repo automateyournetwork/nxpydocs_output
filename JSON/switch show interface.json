@@ -44,7 +44,7 @@
                 "eth_admin_fec_state": "auto", 
                 "eth_autoneg": "on", 
                 "eth_babbles": "0", 
-                "eth_bad_eth": "0", 
+                "eth_bad_eth": "2", 
                 "eth_bad_proto": "0", 
                 "eth_beacon": "off", 
                 "eth_bia_addr": "5206.8d3e.0101", 
