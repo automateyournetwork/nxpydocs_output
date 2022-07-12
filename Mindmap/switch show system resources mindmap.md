@@ -1,24 +1,24 @@
 
 # Show System Resources
 ## CPU State
-### Idle: 85.26
-### Kernel: 11.05
-### User: 3.68
+### Idle: 88.20
+### Kernel: 9.74
+### User: 2.05
 ## Load Averages
-### 15 Minute: 0.40
-### 5 Minute: 0.37
-### 1 Minute: 0.38
+### 15 Minute: 0.31
+### 5 Minute: 0.28
+### 1 Minute: 0.27
 ## Memory
 ### Status: OK
-### Buffers: 114068
-### Cached: 2297380
+### Buffers: 114860
+### Cached: 2300680
 ### Usage
-#### Free: 4450280
+#### Free: 4424884
 #### Total: 8159464
-#### Used: 3709184
+#### Used: 3734580
 ## Processes
 ### Running: 1
-### Total: 675
+### Total: 681
 ## VM
 ### Free: 0
 ### Total: 0

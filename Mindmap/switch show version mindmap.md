@@ -7,7 +7,7 @@
 ## Chassis ID: Nexus9000 C9300v Chassis
 ## CPU Name: Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
 ## Hostname: switch
-## Kernel Uptime: 1 21 6 8
+## Kernel Uptime: 2 2 14 18
 ## Kickstart
 ### Compile Time: 8/4/2021 13:00:00
 ### Filename: bootflash:///nxos.9.3.8.bin
