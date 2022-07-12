@@ -15,7 +15,7 @@
             }
         ]
     }, 
-    "cpu_state_idle": "88.20", 
+    "cpu_state_idle": "5.56", 
     "cpu_state_kernel": "9.74", 
     "cpu_state_user": "2.05", 
     "current_memory_status": "OK", 
