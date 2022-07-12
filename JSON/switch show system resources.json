@@ -18,7 +18,7 @@
     "cpu_state_idle": "88.20", 
     "cpu_state_kernel": "9.74", 
     "cpu_state_user": "2.05", 
-    "current_memory_status": "ERROR", 
+    "current_memory_status": "OK", 
     "load_avg_15min": "0.31", 
     "load_avg_1min": "0.27", 
     "load_avg_5min": "0.28", 
