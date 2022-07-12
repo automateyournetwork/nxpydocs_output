@@ -1,0 +1,4 @@
+# Show System Resources
+| CPU State Idle | CPU State Kernel | CPU State User | Current Memory Status | Load Average 15 Minutes | Load Average 1 Minute | Load Average 5 Minutes | Memory Buffers | Memory Cached | Memory Usage Free | Memory Usage Total | Memory Usage Used | Processes Running | Processes Total | VM Free | VM Total |
+| -------------- | ---------------- | -------------- | --------------------- | ----------------------- | --------------------- | ---------------------- | -------------- | ------------- | ----------------- | ------------------ | ----------------- | ----------------- | --------------- | ------- | -------- |
+| 85.26 | 11.05 | 3.68 | OK | 0.40 | 0.38 | 0.37 | 114068 | 2297380 | 4450280 | 8159464 | 3709184 | 1 | 675 | 0 | 0 |
