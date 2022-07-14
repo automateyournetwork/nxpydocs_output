@@ -27,7 +27,7 @@
                 "timestring": "Jul 07 15:20:37 2022"
             }, 
             {
-                "fname": "nxos.9.3.5.bin", 
+                "fname": "nxos.9.3.8.bin", 
                 "fsize": "1956867584", 
                 "timestring": "Aug 04 22:58:29 2021"
             }, 
@@ -63,8 +63,8 @@
             }
         ]
     }, 
-    "bytesfree": "240295936", 
+    "bytesfree": "240291840", 
     "bytestotal": "4253818880", 
-    "bytesused": "4013522944", 
+    "bytesused": "4013527040", 
     "usage": "bootflash://"
 }
