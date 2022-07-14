@@ -63,8 +63,8 @@
             }
         ]
     }, 
-    "bytesfree": "240291840", 
+    "bytesfree": "240287744", 
     "bytestotal": "4253818880", 
-    "bytesused": "4013527040", 
+    "bytesused": "4013531136", 
     "usage": "bootflash://"
 }

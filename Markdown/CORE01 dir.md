@@ -13,4 +13,4 @@
 | virt_strg_pool_bf_vdc_1/ | 4096 | Jul 07 15:32:49 2022 | N/A | N/A | N/A | N/A |
 | virtual-instance/ | 4096 | Jul 07 15:32:27 2022 | N/A | N/A | N/A | N/A |
 | virtual-instance.conf | 120 | Jul 10 20:09:05 2022 | N/A | N/A | N/A | N/A |
-| N/A | N/A | N/A | 240291840 | 4253818880 | 4013527040 | bootflash:// |
+| N/A | N/A | N/A | 240287744 | 4253818880 | 4013531136 | bootflash:// |
