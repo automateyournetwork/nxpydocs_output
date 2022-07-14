@@ -1,0 +1,8217 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/colreorder/1.5.4/js/dataTables.colReorder.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/keytable/2.6.4/js/dataTables.keyTable.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.9/js/dataTables.fixedHeader.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.9/css/fixedHeader.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/keytable/2.6.4/css/keyTable.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+</head>
+<body>
+<h1>Show Interface</h1>
+<table id = "datatable">
+<thead>
+  <tr>
+    <th>Admin State</th>
+    <th>Description</th>
+    <th>Encapsulation</th>
+    <th>Ethernet Admin FEC State</th>
+    <th>Ethernet Auto Negotiate</th>
+    <th>Ethernet Babbles</th>
+    <th>Ethernet Bad Ethernet</th>
+    <th>Ethernet Bad Protocol</th>
+    <th>Ethernet Beacon</th>
+    <th>Ethernet BIA Address</th>
+    <th>Ethernet Bandwidth</th>
+    <th>Ethernet Clear Counters</th>
+    <th>Ethernet Collisions</th>
+    <th>Ethernet CRC</th>
+    <th>Ethernet Deferred</th>
+    <th>Ethernet Delay</th>
+    <th>Ethernet Dribble</th>
+    <th>Ethernet Duplex</th>
+    <th>Ethernet EEE State</th>
+    <th>Ethernet Ethertype</th>
+    <th>Ethernet Frame</th>
+    <th>Ethernet Giants</th>
+    <th>Ethernet MAC Address</th>
+    <th>Ethernet Hardware Description</th>
+    <th>Ethernet Ignored</th>
+    <th>Ethernet Input Flow Control</th>
+    <th>Ethernet Input Interface Down Drops</th>
+    <th>Ethernet Input Broadcast</th>
+    <th>Ethernet Input Bytes</th>
+    <th>Ethernet Input Discard</th>
+    <th>Ethernet Input Error</th>
+    <th>Ethernet Input Multicast</th>
+    <th>Ethernet Input Pause</th>
+    <th>Ethernet Input Packets</th>
+    <th>Ethernet Input Rate 1 Bits</th>
+    <th>Ethernet Input Rate 1 Packets</th>
+    <th>Ethernet Input Rate 1 Summary Bits</th>
+    <th>Ethernet Input Rate 1 Summary Packets</th>
+    <th>Ethernet Input Rate 2 Bits</th>
+    <th>Ethernet Input Rate 2 Packets</th>
+    <th>Ethernet Input Rate 2 Summary Bits</th>
+    <th>Ethernet Input Rate 2 Summary Packets</th>
+    <th>Ethernet Input Unicast</th>
+    <th>Ethernet IP Address</th>
+    <th>Ethernet IP Mask</th>
+    <th>Ethernet IP Prefix</th>
+    <th>Ethernet Jumbo Input Packets</th>
+    <th>Ethernet Jumbo Outpkts</th>
+    <th>Ethernet Late Collision</th>
+    <th>Ethernet Link Flapped</th>
+    <th>Ethernet Load Interval 1 RX</th>
+    <th>Ethernet Load Interval 1 TX</th>
+    <th>Ethernet Load Interval 2_RX</th>
+    <th>Ethernet Load Interval 2 TX</th>
+    <th>Ethernet Lost Carrier</th>
+    <th>Ethernet MDIX</th>
+    <th>Ethernet MTU</th>
+    <th>Ethernet No Buffer</th>
+    <th>Ethernet No Carrier</th>
+    <th>Ethernet Opereration FEC State</th>
+    <th>Ethernet Output Flow Control</th>
+    <th>Ethernet Output Broadcast</th>
+    <th>Ethernet Output Bytes</th>
+    <th>Ethernet Output Discard</th>
+    <th>Ethernet Output Error</th>
+    <th>Ethernet Output Multicast</th>
+    <th>Ethernet Output Pause</th>
+    <th>Ethernet Output Packets</th>
+    <th>Ethernet Output Rate 1 Bits</th>
+    <th>Ethernet Output Rate 1 Packets</th>
+    <th>Ethernet Output Rate 1 Summary Bits</th>
+    <th>Ethernet Output Rate 1 Summary Packets</th>
+    <th>Ethernet Output Rate 2 Bits</th>
+    <th>Ethernet Output Rate 2 Packets</th>
+    <th>Ethernet Output Rate 2 Summary Bits</th>
+    <th>Ethernet Output Rate 2 Summary Packets</th>
+    <th>Ethernet Output Unicast</th>
+    <th>Ethernet Overrun</th>
+    <th>Ethernet Reliability</th>
+    <th>Ethernet Reset Control</th>
+    <th>Ethernet Runts</th>
+    <th>Ethernet RX Load</th>
+    <th>Ethernet TX Load</th>
+    <th>Ethernet Speed</th>
+    <th>Ethernet Storm Support</th>
+    <th>Ethernet SWT Monitor</th>
+    <th>Ethernet Underrun</th>
+    <th>Ethernet Watchdog</th>
+    <th>Interface</th>
+    <th>Medium</th>
+    <th>Share State</th>
+    <th>State</th>
+    <th>Loopback Input Bytes</th>
+    <th>Loopback Input Compressed</th>
+    <th>Loopback Input Errors</th>
+    <th>Loopback Input FIFO</th>
+    <th>Loopback Input Frame</th>
+    <th>Loopback Input Multicast</th>
+    <th>Loopback Input Overrun</th>
+    <th>Loopback Input Packets</th>
+    <th>Loopback Output Bytes</th>
+    <th>Loopback Output Carriers</th>
+    <th>Loopback Output Collisions</th>
+    <th>Loopback Output Errors</th>
+    <th>Loopback Output FIFO</th>
+    <th>Loopback Output Packets</th>
+    <th>Loopback Output Underruns</th>
+    <th>VDC Level Input Average Bits</th>
+    <th>VDC Level Input Average Packets</th>
+    <th>VDC Level Input Broadcast</th>
+    <th>VDC Level Input Bytes</th>
+    <th>VDC Level Input Multicast</th>
+    <th>VDC Level Input Packets</th>
+    <th>VDC Level Input Unicast</th>
+    <th>VDC Level Output Average Bits</th>
+    <th>VDC Level Output Average Packets</th>
+    <th>VDC Level Output Broadcast</th>
+    <th>VDC Level Output Bytes</th>
+    <th>VDC Level Output Multicast</th>
+    <th>VDC Level Output Packets</th>
+    <th>VDC Level Output Unicast</th>
+  </tr>
+</thead>  
+<tbody>
+  <tr>
+    <td style="background-color:#00FF00">up</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>N/A</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>5254.0001.f01d</td>
+    <td>1000000</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>10</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">full</td>    
+    <td>N/A</td>
+    <td>0x0000</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>5254.0001.f01d</td>
+    <td>Ethernet</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>     
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>      
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>      
+    <td>255</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1000 Mb/s</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>mgmt0</td>
+    <td>broadcast</td>
+    <td>N/A</td>
+    <td>up</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>24</td>
+    <td>0</td>
+    <td>12</td>
+    <td>2651259</td>
+    <td>12143</td>
+    <td>12155</td>
+    <td>0</td>
+    <td>24</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2278492</td>
+    <td>10500</td>
+    <td>10500</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td style="background-color:#00FF00">up</td>
+    <td>NAT</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0101</td>
+    <td>1000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">full</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.1b08</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>10</td>
+    <td>61918969</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>18380339021839143681</td>
+    <td>76</td>
+    <td>0</td>
+    <td>35832</td>
+    <td>81672</td>
+    <td>2</td>
+    <td>81.67 Kbps</td>
+    <td>2 pps</td>
+    <td>231432</td>
+    <td>32</td>
+    <td>231.43 Kbps</td>
+    <td>32 pps</td>
+    <td>35746</td>
+    <td>192.168.255.238</td>
+    <td>24</td>
+    <td>192.168.255.0</td>
+    <td>6532</td>
+    <td>17816065462232293716</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td style="background-color:#FF0000">01:14:13</td>
+    <td>30</td>
+    <td>30</td>
+    <td>300</td>
+    <td>300</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>4</td>
+    <td>23305875</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>297709272693831679</td>
+    <td>323184</td>
+    <td>0</td>
+    <td>353753</td>
+    <td>3456</td>
+    <td>5</td>
+    <td>3.46 Kbps</td>
+    <td>5 pps</td>
+    <td>8304</td>
+    <td>27</td>
+    <td>8.30 Kbps</td>
+    <td>27 pps</td>
+    <td>30565</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>1881</td>
+    <td>2</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1000 Mb/s</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/1</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>up</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0102</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0102</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>18380339021772034049</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>2387908411519212357</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td style="background-color:#FF0000">01:14:30</td>
+    <td>30</td>
+    <td>30</td>
+    <td>300</td>
+    <td>300</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>21106245</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>297709271532176639</td>
+    <td>323102</td>
+    <td>0</td>
+    <td>323102</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>55216</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/2</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0103</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0103</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>4184992998595168720</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>21467697408</td>
+    <td>6310406318591901696</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td style="background-color:#FF0000">01:14:30</td>
+    <td>30</td>
+    <td>30</td>
+    <td>300</td>
+    <td>300</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>21106245</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>3900588973982287103</td>
+    <td>323102</td>
+    <td>0</td>
+    <td>323102</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>63642</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/3</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0104</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0104</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/4</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0105</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0105</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/5</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0106</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0106</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/6</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0107</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0107</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/7</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0108</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0108</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/8</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0109</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0109</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/9</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.010a</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.010a</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/10</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.010b</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.010b</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/11</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.010c</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.010c</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/12</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.010d</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.010d</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/13</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.010e</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.010e</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/14</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.010f</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.010f</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/15</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0110</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0110</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/16</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0111</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0111</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/17</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0112</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0112</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/18</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0113</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0113</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/19</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0114</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0114</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/20</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0115</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0115</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/21</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0116</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0116</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/22</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0117</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0117</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/23</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0118</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0118</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/24</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0119</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0119</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/25</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.011a</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.011a</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/26</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.011b</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.011b</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/27</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.011c</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.011c</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/28</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.011d</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.011d</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/29</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.011e</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.011e</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/30</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.011f</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.011f</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/31</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0120</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0120</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/32</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0121</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0121</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/33</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0122</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0122</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/34</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0123</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0123</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/35</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0124</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0124</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/36</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0125</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0125</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/37</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0126</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0126</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/38</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0127</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0127</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/39</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0128</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0128</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/40</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0129</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0129</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/41</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.012a</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.012a</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/42</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.012b</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.012b</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/43</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.012c</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.012c</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/44</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.012d</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.012d</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/45</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.012e</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.012e</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/46</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.012f</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.012f</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/47</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0130</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0130</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/48</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0131</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0131</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/49</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0132</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0132</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/50</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0133</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0133</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/51</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0134</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0134</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/52</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0135</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0135</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/53</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0136</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0136</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/54</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0137</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0137</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/55</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0138</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0138</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/56</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0139</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0139</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/57</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.013a</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.013a</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/58</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.013b</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.013b</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/59</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.013c</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.013c</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/60</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.013d</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.013d</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/61</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.013e</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.013e</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/62</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.013f</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.013f</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/63</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>    
+    <td style="background-color:#FF0000">down</td>
+    <td>N/A</td>
+    <td>ARPA</td>
+    <td>auto</td>
+    <td>on</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>off</td>
+    <td>5201.f01d.0140</td>
+    <td>10000000</td>
+    <td>never</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">auto</td>    
+    <td>n/a</td>
+    <td>0x8100</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5201.f01d.0140</td>
+    <td>100/1000/10000 Ethernet</td>
+    <td>0</td>
+    <td>off</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>     
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>
+    <td style="background-color:#00FF00">never</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>    
+    <td>off</td>
+    <td>1500</td>
+    <td>0</td>
+    <td>0</td>
+    <td>off</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0 bps</td>
+    <td>0 pps</td>
+    <td>0</td>
+    <td style="background-color:#00FF00">0</td>      
+    <td>255</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>auto-speed</td>
+    <td>0</td>
+    <td>off</td>
+    <td>0</td>
+    <td>0</td>
+    <td>Ethernet1/64</td>
+    <td>broadcast</td>
+    <td>Dedicated</td>
+    <td>down</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td style="background-color:#00FF00">N/A</td>
+    <td style="background-color:#00FF00">N/A</td>    
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+</tbody>
+</table><script type = "text/javascript">
+  $(document).ready(function(){
+    $('#datatable thead tr')
+    .clone(true)
+    .addClass('filters')
+    .appendTo('#datatable thead');
+
+    var table = $('#datatable').DataTable({
+        keys: true,
+        dom: 'Bfrtip',
+        lengthMenu: [
+            [ 10, 25, 50, -1 ],
+            [ '10 rows', '25 rows', '50 rows', 'Show all' ]
+        ],
+        buttons: [
+        'pageLength','colvis','copy', 'csv', 'excel', 'pdf', 'print'
+        ],
+        colReorder: true,
+        select: true,            
+        orderCellsTop: true,
+        fixedHeader: true,
+        initComplete: function () {
+        var api = this.api();
+
+        // For each column
+        api
+            .columns()
+            .eq(0)
+            .each(function (colIdx) {
+                // Set the header cell to contain the input element
+                var cell = $('.filters th').eq(
+                    $(api.column(colIdx).header()).index()
+                );
+                var title = $(cell).text();
+                $(cell).html('<input type="text" placeholder="' + title + '" />');
+
+                // On every keypress in this input
+                $(
+                    'input',
+                    $('.filters th').eq($(api.column(colIdx).header()).index())
+                )
+                    .off('keyup change')
+                    .on('keyup change', function (e) {
+                        e.stopPropagation();
+
+                        // Get the search value
+                        $(this).attr('title', $(this).val());
+                        var regexr = '({search})'; //$(this).parents('th').find('select').val();
+
+                        var cursorPosition = this.selectionStart;
+                        // Search the column for that value
+                        api
+                            .column(colIdx)
+                            .search(
+                                this.value != ''
+                                    ? regexr.replace('{search}', '(((' + this.value + ')))')
+                                    : '',
+                                this.value != '',
+                                this.value == ''
+                            )
+                            .draw();
+
+                        $(this)
+                            .focus()[0]
+                            .setSelectionRange(cursorPosition, cursorPosition);
+                    });
+            });
+    },
+});
+});        
+</script>
+</body></html>
